@@ -40,7 +40,7 @@ jobs:
         with:
           registry: ghcr.io
           username: alialibalaei
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.TOKEN_GIT }}
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
@@ -85,7 +85,7 @@ jobs:
         with:
           registry: ghcr.io
           username: alialibalaei
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.TOKEN_GIT }}
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
