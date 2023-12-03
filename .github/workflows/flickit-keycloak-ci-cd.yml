@@ -101,8 +101,8 @@ jobs:
         with:
           images: ghcr.io/alialibalaei/flickit-keycloak
           tags: |
-            # set latest tag for master branch
-            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
+            # set latest tag for default branch
+            type=raw,value=latest,enable={{is_default_branch}}
            
       - name: Build and push
         uses: docker/build-push-action@v5
